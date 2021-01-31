@@ -1,0 +1,338 @@
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Кастомные свойства -цвета */
+
+:root {
+  --basic-black: #000000; /*веб-сайты; студия, клиенты...; долго, скурпулезноюю; мы маленькая..; с 2004 г..; проценты; NERDS..; давайте дружить..*/
+  --basic-black-light:#283136;/*математически выверенный дизайн..; мир никогда не будет прежним..; исповедуем...; веб-сайтов любой сложности..; уровень самоотдачи.. */
+  --basic-grey-dark: #444444; /*скидка 10%*/
+  --basic-grey: #666666;/*адрес в футере*/
+  --basic-grey-light: #E1E1E1;/*фон иконок соцсетей*/
+  --basic-grey-extra-light: #EEEEEE;/*фон header, Как работает дизайн-студия*/
+  --basic-white: #ffffff;
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --special-red-hover: #E74246;
+  --special-red-active: #D7373B;
+  --special-green-hover: #00BC6C;
+  --special-green-active: #00AA62;
+  --special-yellow-hover: #EAB534;
+  --special-yellow-active: #E5A722;
+  --special-grey-active:  #A6A6A6;
+}
+
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* все списки*/
+.site-nav,
+.services-list,
+.orders-list,
+.benefits-list,
+.partners-list,
+.social-list {
+  list-style: none;
+}
+
+/*все кнопки и ссылки ввиде кнопок*/
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+/*BODY*/
+
+/* header */
+
+.nav {
+  background-color: var(--basic-grey-extra-light);
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.cart span:hover {
+  color: var(--special-red-hover);
+}
+
+.site-nav a:active,
+.cart span:active {
+  color: var(--basic-black);
+  opacity:0.3;
+}
+
+/*main Cекция -Как работает студия*/
+
+.work-studio {
+  background-color: var(--basic-grey-extra-light);
+}
+
+.slide-slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-text {
+  line-height: 24px;
+  color: var(--basic-black-ligh);
+}
+
+
+.wrap-btn-slide {
+  background-color: var(--basic-red);
+  width: 240px;
+  text-align: center;
+}
+
+.wrap-btn-slide:hover {
+  background-color: var(--special-red-hover);
+}
+
+.wrap-btn-slide:active {
+  background-color: var(--special-red-active);
+}
+
+.btn-slide span:active {
+  opacity: 0.3;
+}
+
+/* main Cекция -Услуги веб-студии*/
+
+.service-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service-item p {
+  line-height: 24px;
+  color: var(--basic-black-ligh);
+}
+
+/*Фоновый цвет, если картинка не загружается"*/
+.wrap-img {
+  width:300px;
+  height:146px;
+}
+.img-site {
+  background-color: var(--basic-red);
+}
+.img-application {
+  background-color: var(--basic-green);
+}
+.img-presentation {
+  background-color: var(--basic-yellow);
+}
+
+/* Заказать - красная кнопка*/
+.wrap-btn-site,
+.btn-site {
+  width: 160px;
+  background-color: var(--basic-red);
+}
+
+.wrap-btn-site:hover,
+.btn-site:hover  {
+  background-color: var(--special-red-hover);
+}
+
+.btn-site:active {
+  opacity: 0.3;
+}
+
+.wrap-btn-site:active {
+  background-color: var(--special-red-active);
+}
+
+/* Заказать - зеленая кнопка*/
+.wrap-btn-application,
+.btn-application {
+  width: 160px;
+  background-color: var(--basic-green);
+}
+
+.wrap-btn-application:hover ,
+.btn-application:hover {
+  background-color: var(--special-green-hover);
+}
+
+.btn-application:active {
+  opacity: 0.3;
+}
+
+.wrap-btn-application:active {
+  background-color: var(--special-green-active);
+}
+
+/* Заказать - желтая кнопка*/
+.wrap-btn-presentation,
+.btn-presentation {
+  width: 160px;
+  background-color: var(--basic-yellow);
+}
+
+.wrap-btn-presentation:hover,
+.btn-presentation:hover  {
+  background-color: var(--special-yellow-hover);
+}
+
+.btn-presentation:active {
+  opacity: 0.3;
+}
+
+.wrap-btn-presentation:active {
+  background-color: var(--special-yellow-active);
+}
+
+
+/*main Секция - О дизайн-студии*/
+
+.description-slogan {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.description-text,
+.orders-list {
+  line-height: 24px;
+  color: var(--basic-black-ligh);
+}
+
+.description-orders h3,
+.about-benefits h3 {
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.benefit-text {
+  line-height: 18px;
+  color: var(--basic-black-ligh);
+}
+
+.benefit-item .number {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.benefit-item .percent {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/*Футер Как нас найти*/
+
+.adress-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.adress-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey);
+}
+
+.footer-phone {
+  color: var(--basic-grey);
+}
+
+.btn-footer {
+  background-color: var(--basic-red);
+}
+
+/* Футер Давайте дружить*/
+
+.wrap-img-social {
+  width: 81px;
+  height: 81px;
+  background-color: var( --basic-grey-light);
+}
+
+.wrap-img-social:hover {
+  background-color: var(--special-red-hover);
+}
+
+.wrap-img-social:active {
+  background-color: var(--special-red-active);
+}
+
+.btn-social img:active {
+  opacity: 0.3;
+}
+
+.social-slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.social-text {
+  line-height: 22px;
+  color: var( --basic-grey-dark);
+}
