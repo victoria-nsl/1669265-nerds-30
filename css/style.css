@@ -26,12 +26,12 @@
 /* Кастомные свойства -цвета */
 
 :root {
-  --basic-black: #000000; /*веб-сайты; студия, клиенты...; долго, скурпулезноюю; мы маленькая..; с 2004 г..; проценты; NERDS..; давайте дружить..*/
-  --basic-black-light:#283136;/*математически выверенный дизайн..; мир никогда не будет прежним..; исповедуем...; веб-сайтов любой сложности..; уровень самоотдачи.. */
-  --basic-grey-dark: #444444; /*скидка 10%*/
-  --basic-grey: #666666;/*адрес в футере*/
-  --basic-grey-light: #E1E1E1;/*фон иконок соцсетей*/
-  --basic-grey-extra-light: #EEEEEE;/*фон header, Как работает дизайн-студия*/
+  --basic-black: #000000;
+  --basic-black-light:#283136;
+  --basic-grey-dark: #444444;
+  --basic-grey: #666666;
+  --basic-grey-light: #E1E1E1;
+  --basic-grey-extra-light: #EEEEEE;
   --basic-white: #ffffff;
   --basic-red: #FB565A;
   --basic-green: #00CA74;
@@ -48,7 +48,7 @@
 /* ГЛОБАЛЬНЫЕ СТИЛИ */
 
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -94,6 +94,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 /*BODY*/
@@ -136,23 +137,23 @@ img {
 }
 
 
-.wrap-btn-slide {
+.btn-slide {
   background-color: var(--basic-red);
-  width: 240px;
-  text-align: center;
 }
 
-.wrap-btn-slide:hover {
+.btn-slide:hover {
   background-color: var(--special-red-hover);
 }
 
-.wrap-btn-slide:active {
+.btn-slide:active {
   background-color: var(--special-red-active);
 }
 
-.btn-slide span:active {
+.btn-slide:active span {
   opacity: 0.3;
 }
+
+
 
 /* main Cекция -Услуги веб-студии*/
 
@@ -184,65 +185,58 @@ img {
 }
 
 /* Заказать - красная кнопка*/
-.wrap-btn-site,
 .btn-site {
   width: 160px;
   background-color: var(--basic-red);
 }
 
-.wrap-btn-site:hover,
 .btn-site:hover  {
   background-color: var(--special-red-hover);
 }
 
-.btn-site:active {
+.btn-site:active span {
   opacity: 0.3;
 }
 
-.wrap-btn-site:active {
+.btn-site:active {
   background-color: var(--special-red-active);
 }
 
 /* Заказать - зеленая кнопка*/
-.wrap-btn-application,
 .btn-application {
   width: 160px;
   background-color: var(--basic-green);
 }
 
-.wrap-btn-application:hover ,
 .btn-application:hover {
   background-color: var(--special-green-hover);
 }
 
-.btn-application:active {
+.btn-application:active span{
   opacity: 0.3;
 }
 
-.wrap-btn-application:active {
+.btn-application:active {
   background-color: var(--special-green-active);
 }
 
 /* Заказать - желтая кнопка*/
-.wrap-btn-presentation,
 .btn-presentation {
   width: 160px;
   background-color: var(--basic-yellow);
 }
 
-.wrap-btn-presentation:hover,
 .btn-presentation:hover  {
   background-color: var(--special-yellow-hover);
 }
 
-.btn-presentation:active {
+.btn-presentation:active span {
   opacity: 0.3;
 }
 
-.wrap-btn-presentation:active {
+.btn-presentation:active {
   background-color: var(--special-yellow-active);
 }
-
 
 /*main Секция - О дизайн-студии*/
 
@@ -308,21 +302,19 @@ img {
 
 /* Футер Давайте дружить*/
 
-.wrap-img-social {
-  width: 81px;
-  height: 81px;
+.btn-social {
   background-color: var( --basic-grey-light);
 }
 
-.wrap-img-social:hover {
+.btn-social:hover {
   background-color: var(--special-red-hover);
 }
 
-.wrap-img-social:active {
+.btn-social:active {
   background-color: var(--special-red-active);
 }
 
-.btn-social img:active {
+.btn-social:active img {
   opacity: 0.3;
 }
 
