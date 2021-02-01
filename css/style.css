@@ -23,16 +23,20 @@
   font-weight: 500;
   font-style: normal;
 }
+
 /* Кастомные свойства -цвета */
 
 :root {
   --basic-black: #000000;
+  --basic-black-rgb:0,0,0;
   --basic-black-light:#283136;
   --basic-grey-dark: #444444;
+  --basic-grey--dark-l: #4D4D4D;
   --basic-grey: #666666;
   --basic-grey-light: #E1E1E1;
   --basic-grey-extra-light: #EEEEEE;
   --basic-white: #ffffff;
+  --basic-white-rgb:255,255,255;
   --basic-red: #FB565A;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
@@ -43,6 +47,8 @@
   --special-yellow-hover: #EAB534;
   --special-yellow-active: #E5A722;
   --special-grey-active:  #A6A6A6;
+  --special-grey-hover:  #DFDFDF;
+  --special-grey-active-catalog: #D5D5D5;
 }
 
 /* ГЛОБАЛЬНЫЕ СТИЛИ */
@@ -79,7 +85,12 @@ img {
 .orders-list,
 .benefits-list,
 .partners-list,
-.social-list {
+.social-list,
+.sort-type-list,
+.catalog-list,
+.page-list,
+.filter-features-list,
+.filter-grids-list {
   list-style: none;
 }
 
@@ -94,6 +105,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -136,7 +148,6 @@ img {
   color: var(--basic-black-ligh);
 }
 
-
 .btn-slide {
   background-color: var(--basic-red);
 }
@@ -147,12 +158,8 @@ img {
 
 .btn-slide:active {
   background-color: var(--special-red-active);
+  color: rgba(var(--basic-white-rgb),0.3);
 }
-
-.btn-slide:active span {
-  opacity: 0.3;
-}
-
 
 
 /* main Cекция -Услуги веб-студии*/
@@ -170,23 +177,37 @@ img {
 }
 
 /*Фоновый цвет, если картинка не загружается"*/
+
 .wrap-img {
   width:300px;
   height:146px;
 }
+
 .img-site {
   background-color: var(--basic-red);
 }
+
 .img-application {
   background-color: var(--basic-green);
 }
+
 .img-presentation {
   background-color: var(--basic-yellow);
 }
 
-/* Заказать - красная кнопка*/
-.btn-site {
+/*Кнопки ЗАКАЗАТЬ*/
+
+.btn-service {
   width: 160px;
+}
+
+.btn-service:active {
+  color: rgba(var(--basic-white-rgb),0.3);
+}
+
+/*красная кнопка*/
+
+.btn-site {
   background-color: var(--basic-red);
 }
 
@@ -194,17 +215,13 @@ img {
   background-color: var(--special-red-hover);
 }
 
-.btn-site:active span {
-  opacity: 0.3;
-}
-
 .btn-site:active {
   background-color: var(--special-red-active);
 }
 
-/* Заказать - зеленая кнопка*/
+/* зеленая кнопка*/
+
 .btn-application {
-  width: 160px;
   background-color: var(--basic-green);
 }
 
@@ -212,26 +229,18 @@ img {
   background-color: var(--special-green-hover);
 }
 
-.btn-application:active span{
-  opacity: 0.3;
-}
-
 .btn-application:active {
   background-color: var(--special-green-active);
 }
 
-/* Заказать - желтая кнопка*/
+/*желтая кнопка*/
+
 .btn-presentation {
-  width: 160px;
   background-color: var(--basic-yellow);
 }
 
 .btn-presentation:hover  {
   background-color: var(--special-yellow-hover);
-}
-
-.btn-presentation:active span {
-  opacity: 0.3;
 }
 
 .btn-presentation:active {
@@ -327,4 +336,176 @@ img {
 .social-text {
   line-height: 22px;
   color: var( --basic-grey-dark);
+}
+
+/*КАТАЛОГ*/
+
+.wrap-catalor-title {
+  background-color: var(--basic-grey-extra-light);
+  text-align: center;
+}
+
+.wrap-catalor-title h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*Фильтр шаблонов Стоимость*/
+
+.filter-cost {
+  text-transform: uppercase;
+}
+
+.filter-cost h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter-cost-picture, .filter-cost-range input {
+  background-color: var(--basic-grey-extra-light);
+}
+
+.filter-cost-range  {
+  line-height: 22px;
+  color: var(--basic-black-light);
+}
+
+/*Фильтр шаблонов Сетка Особенности*/
+
+.filter-grids, .filter-features {
+  border: 0 none;
+}
+
+.filter-grids-features legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-option {
+  line-height: 19px;
+  color: var(--basic-black-light);
+}
+
+.btn-filter {
+  background-color: var(--basic-grey-extra-light);
+  color: var(--basic-black);
+  line-height: 18px;
+}
+
+.btn-filter:hover  {
+  background-color: var(--special-grey-hover);
+}
+
+.btn-filter:active  {
+  background-color: var(--special-grey-active-catalog);
+  color: rgba(var(--basic-black-rgb),0.3);
+}
+
+/*Каталог шаблонов Сортировать*/
+
+.catalog-sort {
+  text-transform: uppercase;
+}
+
+.catalog-sort h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sort-type-list li {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sort-type-list li:hover {
+  opacity: 0.6;
+}
+
+.sort-type-list li:active, .sort-type-list li:first-child {
+  opacity: 1;
+}
+
+/*Каталог шаблонов Каталог*/
+
+.catalog-slider {
+  width: 360px;
+  height: 40px;
+  background-color: var(--basic-grey--dark-l);
+  opacity: 0.12;
+}
+
+.catalog-item:hover .catalog-slider {
+  opacity: 1;
+}
+
+.catalog-item-description {
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey-extra-light);
+}
+
+.catalog-item:hover .catalog-item-description {
+  visibility: visible;
+}
+
+.catalog-item-description h3{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-item-description h3:hover {
+  color: var(--basic-red);
+}
+
+.catalog-item-description h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-item-description p {
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-grey);
+}
+
+.btn-catalog-item {
+  width: 200px;
+  background-color: var(--basic-red);
+}
+
+.btn-catalog-item:hover  {
+  background-color: var(--special-red-hover);
+}
+
+.btn-catalog-item:active {
+  background-color: var(--special-red-active);
+}
+
+/*Список страниц*/
+
+.page-item {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.page-item a[href] {
+  background-color: var(--basic-grey-extra-light);
+}
+
+.page-item a[href]:hover {
+  background-color: var(--special-grey-hover);
+}
+
+.page-item a[href]:active {
+  background-color:var(--special-grey-active-catalog);
+  color: rgba(var(--basic-black-rgb),0.3);
 }
