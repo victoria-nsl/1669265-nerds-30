@@ -38,18 +38,20 @@
         </a>
       </nav>
     </header>
-    <main class="container">
+    <main class="container page-main">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
       <section class="work-studio">
         <h2 class="visually-hidden">Как работает дизайн-студия</h2>
         <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked />
-          <input type="radio" id="btn-2" name="toggle" />
-          <input type="radio" id="btn-3" name="toggle" />
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+          <div class="slider-inner-radio">
+            <input type="radio" id="btn-1" name="toggle" checked />
+            <input type="radio" id="btn-2" name="toggle" />
+            <input type="radio" id="btn-3" name="toggle" />
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
           </div>
           <div class="slider-inner">
             <div class="slider-slides">
@@ -91,7 +93,7 @@
                 </p>
                 <p>
                   <a class="btn btn-slide" href="#">
-                      УЗНАТЬ БОЛЬШЕ
+                    УЗНАТЬ БОЛЬШЕ
                   </a>
                 </p>
                 <div class="slide-img"></div> <!--Декоративное изображение с помощью CSS-свойства background-image-->
@@ -155,49 +157,51 @@
       </section>
       <section class="about-studio">
         <h2 class="visually-hidden">О дизайн-студии</h2>
-        <div class="about-description">
-          <p class="description-slogan">
-            Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
-          </p>
-          <p class="description-text" >
-            Исповедуем принципы минимализма и чистоты. Ставим математический
-            расчет <br />превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <div class="description-orders" >
-            <h3>Выполняем заказы на разработку:</h3>
-            <ul class="orders-list">
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <div class="wrap-about">
+          <div class="about-description">
+            <p class="description-slogan">
+              Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
+            </p>
+            <p class="description-text" >
+              Исповедуем принципы минимализма и чистоты. Ставим математический
+              расчет <br />превыше креатива. Работаем не покладая рук, как роботы.
+            </p>
+            <div class="description-orders" >
+              <h3>Выполняем заказы на разработку:</h3>
+              <ul class="orders-list">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-benefits">
+            <div class="about-logo"></div>  <!--Декоративное изображение с помощью CSS-свойства background-image-->
+            <h3>с 2004 года Любим точность во всем:</h3>
+            <ul class="benefits-list">
+              <li class="benefit-item">
+                <p>
+                  <span class="number">146</span>
+                  <span class="percent">%</span>
+                </p>
+                <p class="benefit-text" >Уровень<br/>самоотдачи</p>
+              </li>
+              <li class="benefit-item">
+                <p>
+                  <span class="number">100</span>
+                  <span class="percent">%</span>
+                </p>
+                <p class="benefit-text" >Соблюдение<br/>сроков</p>
+              </li>
+              <li class="benefit-item">
+                <p>
+                  <span class="number">50</span>
+                  <span class="percent">%</span>
+                </p>
+                <p class="benefit-text" >Минимальная<br/>предоплата</p>
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="about-benefits">
-          <div class="about-logo"></div>  <!--Декоративное изображение с помощью CSS-свойства background-image-->
-          <h3>с 2004 года Любим точность во всем:</h3>
-          <ul class="benefits-list">
-            <li class="benefit-item">
-              <p>
-                <span class="number">146</span>
-                <span class="percent">%</span>
-              </p>
-              <p class="benefit-text" >Уровень<br/>самоотдачи</p>
-            </li>
-            <li class="benefit-item">
-              <p>
-                <span class="number">100</span>
-                <span class="percent">%</span>
-              </p>
-              <p class="benefit-text" >Соблюдение<br/>сроков</p>
-            </li>
-            <li class="benefit-item">
-              <p>
-                <span class="number">50</span>
-                <span class="percent">%</span>
-              </p>
-              <p class="benefit-text" >Минимальная<br/>предоплата</p>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="partners-studio">
@@ -270,40 +274,44 @@
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Давайте дружить!</h2>
-        <ul class="social-list">
-          <li>
-            <a class="btn-social" href="#">
-              <img
-                src="img/vk-icon.svg"
-                width="27"
-                height="15"
-                alt="Иконка В контакте"
-              />
-            </a>
-          </li>
-          <li>
-            <a class="btn-social" href="#">
-              <img
-                src="img/fb-icon.svg"
-                width="12"
-                height="22"
-                alt="Иконка Фейсбук"
-              />
-            </a>
-          </li>
-          <li>
-            <a class="btn-social" href="#">
-              <img
-                src="img/insta-icon.svg"
-                width="21"
-                height="21"
-                alt="Иконка Инстаграм"
-              />
-            </a>
-          </li>
-        </ul>
-        <p class="social-slogan">Давайте дружить, это выгодно!</p>
-        <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="wrap-social">
+          <ul class="social-list">
+            <li>
+              <a class="btn-social" href="#">
+                <img
+                  src="img/vk-icon.svg"
+                  width="27"
+                  height="15"
+                  alt="Иконка В контакте"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="btn-social" href="#">
+                <img
+                  src="img/fb-icon.svg"
+                  width="12"
+                  height="22"
+                  alt="Иконка Фейсбук"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="btn-social" href="#">
+                <img
+                  src="img/insta-icon.svg"
+                  width="21"
+                  height="21"
+                  alt="Иконка Инстаграм"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="social-inner">
+            <p class="social-slogan">Давайте дружить, это выгодно!</p>
+            <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
       </section>
     </footer>
   </body>
