@@ -132,12 +132,12 @@ img {
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
   background-color: var(--basic-grey-extra-light);
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
 }
 
 .nav {
   display: grid;
-  grid-template-columns: 160px 1fr min-content;
+  grid-template-columns: 160px 1fr 115px;
   column-gap: 40px;
   line-height: 30px;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ img {
 .cart {
   outline: 5px solid rgba(255, 0, 255, 0.3);
   outline-offset: -5px;
-
+  justify-self: end;
 }
 
 .site-nav a:hover,
@@ -417,7 +417,7 @@ img {
 
 /*Футер Как нас найти*/
 .footer-contacts {
-  outline: 5px solid rgba(255,100,0,0.5);
+  outline: 5px solid rgba(0,0,255,0.5);
   outline-offset: -5px;
 }
 
@@ -493,37 +493,45 @@ img {
 }
 
 /*КАТАЛОГ*/
-/*
+
 .page-catalog {
+  outline: 5px solid rgba(200,20,100,0.5);
+  outline-offset: -5px;
+}
+
+.wrap-catalor-title {
+  background-color: var(--basic-grey-extra-light);
+  text-align: center;
+  outline: 5px solid rgba(0,100,0,0.5);
+  outline-offset: -5px;
+  margin-bottom: 55px;
+  display: grid;
+}
+
+.catalor-title  {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  outline: 5px solid rgba(255,100,0,0.5);
+  outline-offset: -5px;
+  grid-column: 1/-1;
+}
+
+.wrap-filters-catalog {
   outline: 5px solid rgba(255,100,0,0.5);
   outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 40px;
-  }
-*/
-.wrap-catalor-title {
-  background-color: var(--basic-grey-extra-light);
-  text-align: center;
- /* outline: 5px solid rgba(0,100,0,0.5);
-  outline-offset: -5px;
-  margin-bottom: 55px;
-  grid-column: 1/-1;*/
-}
-
-.wrap-catalor-title h1 {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
 }
 
 /*Фильтр шаблонов Стоимость*/
-/*
+
 .wrap-filters {
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
 }
-*/
+
 .filter-cost {
   text-transform: uppercase;
 }
@@ -578,12 +586,10 @@ img {
 
 /*Каталог шаблонов Сортировать*/
 
-/*
 .wrap-catalog {
   outline: 5px solid rgba(250,200,0,0.5);
   outline-offset: -5px;
 }
-*/
 
 .catalog-sort {
   text-transform: uppercase;
