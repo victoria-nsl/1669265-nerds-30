@@ -68,6 +68,7 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -101,6 +102,21 @@ img {
 .filter-features-list,
 .filter-grids-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Убираем место, занимаемое скрытыми заголовками*/
+
+.page-main h1,
+.work-studio h2,
+.services-studio h2,
+.about-studio h2,
+.partners-studio h2,
+.footer-contacts h2,
+.footer-social h2 {
+  margin: 0;
+  font-size: 0;
 }
 
 /* Grid */
@@ -129,10 +145,7 @@ img {
 /* header */
 
 .header {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   background-color: var(--basic-grey-extra-light);
-  /*margin-bottom: 80px;*/
 }
 
 .nav {
@@ -142,27 +155,18 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
-}
-
-.header-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-
 }
 
 .site-nav{
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
-  margin: 0;
   justify-self: center;
 }
 
 .cart {
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
   justify-self: end;
+}
+
+.cart span {
+  padding-left: 20px;
 }
 
 .site-nav a:hover,
@@ -178,52 +182,62 @@ img {
 
 /*main*/
 
-
 /*main Cекция -Как работает студия*/
 
 .work-studio {
-  outline: 5px solid rgba(0,0,255,0.5);
-  outline-offset: -5px;
   background-color: var(--basic-grey-extra-light);
   margin-bottom: 80px;
 }
 
 .slider {
   display: grid;
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
 }
 
 .slider-inner-radio {
-  outline: 5px solid rgba(250,200,0,0.5);
-  outline-offset: -5px;
   grid-column: 1/-1;
   justify-self: center;
 }
 
 .slider-slides {
   display: grid;
+  height: 431px;
 }
 
 .slide {
-  outline: 5px solid rgba(200, 0, 200, 0.3);
-  outline-offset: -5px;
   grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-inner-story {
+  width: 397px;
+  height: 431px;
 }
 
 .slide-slogan {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 79px;
 }
 
 .slide-text {
   line-height: 24px;
   color: var(--basic-black-ligh);
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .btn-slide {
   background-color: var(--basic-red);
+  display: block;
+  width: 240px;
+  height: 50px;
+  padding: 15px 54px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
 }
 
 .btn-slide:hover {
@@ -235,28 +249,38 @@ img {
   color: rgba(var(--basic-white-rgb),0.3);
 }
 
+.slide-img {
+  width: 760px;
+  height: 431px;
+}
 
+.img-smartphone {
+  background-image: url(../img/nerds-index-slide1-1.png);
+}
+
+.img-computer {
+  background-image: url(../img/nerds-index-slide2-1.png);
+}
+
+.img-gadget {
+  background-image: url(../img/nerds-index-slide3-1.png);
+}
 
 /* main Cекция -Услуги дизайн-студии*/
 
 .services-studio {
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
   margin-bottom: 80px;
 }
 
 .services-list {
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
-
 }
 
 .service-item {
-  outline: 5px solid rgba(0,100,0,0.5);
-  outline-offset: -5px;
+  display:flex;
+  flex-direction: column;
 }
 
 .service-item h3 {
@@ -264,19 +288,26 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 16px;
+  order: 2;
 }
 
 .service-item p {
   line-height: 24px;
   color: var(--basic-black-ligh);
+  margin: 0;
+  margin-bottom: 32px;
+  order: 3;
 }
-
-/*Фоновый цвет, если картинка не загружается"*/
 
 .wrap-img {
   width:300px;
   height:146px;
+  margin-bottom: 25px;
 }
+
+/*Фоновый цвет, если картинка не загружается"*/
 
 .img-site {
   background-color: var(--basic-red);
@@ -293,7 +324,12 @@ img {
 /*Кнопки ЗАКАЗАТЬ*/
 
 .btn-service {
+  display: block;
   width: 160px;
+  height: 50px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  order: 4;
 }
 
 .btn-service:active {
@@ -345,29 +381,28 @@ img {
 /*main Секция - О дизайн-студии*/
 
 .about-studio {
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
-  margin-bottom: 74px;
+  margin-bottom: 73px;
+  border-top: 2px solid var(--basic-grey-extra-light);
 }
 
 .wrap-about {
-  margin: 0;
-  padding: 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 360px;
   column-gap: 40px;
-}
-
-.about-description,
-.about-benefits {
-  outline: 5px solid rgba(0,100,0,0.5);
-  outline-offset: -5px;
 }
 
 .description-slogan {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin: 0;
+  margin-bottom: 32px;
+  margin-top: 73px;
+}
+
+.description-text {
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .description-text,
@@ -379,13 +414,55 @@ img {
 .description-orders h3,
 .about-benefits h3 {
   font-weight: 700;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.benefit-text {
-  line-height: 18px;
-  color: var(--basic-black-ligh);
+.description-orders h3 {
+  margin-bottom: 23px;
+}
+
+.orders-list li:not(:nth-child(3)) {
+  margin-bottom: 24px;
+}
+
+.about-logo {
+  width: 360px;
+  height: 208px;
+  background-image: url(../img/nerds-illustration-1.jpg);
+  margin-bottom: 37px;
+  margin-top: 39px;
+}
+
+.about-benefits h3 {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.benefits-list {
+ display:flex;
+}
+
+.benefit-item {
+  flex-grow: 1;
+}
+
+.benefit-item:nth-child(1), .benefit-item:nth-child(2) {
+  width: 98px;
+}
+
+.benefit-item:nth-child(3) {
+  width: 112px;
+}
+
+.benefit-item p {
+  margin: 0;
+}
+
+.benefit-item p:first-child {
+  margin-bottom: 10px;
 }
 
 .benefit-item .number {
@@ -400,25 +477,55 @@ img {
   line-height: 40px;
 }
 
-/*Партнеры*/
-.partners-studio {
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
-  margin-bottom: 80px;
+.benefit-text {
+  line-height: 18px;
+  color: var(--basic-black-ligh);
 }
 
+/*Партнеры*/
+
+.partners-studio {
+  margin-bottom: 80px;
+  border-top: 2px solid var(--basic-grey-extra-light);
+  border-bottom: 2px solid var(--basic-grey-extra-light);
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-list li {
+  width: 260px;
+  height: 180px;
+  box-sizing: border-box;
+}
+
+.partners-list li:nth-child(1) {
+  padding: 63px 28px 50px 28px;
+}
+
+.partners-list li:nth-child(2) {
+  padding: 45px 25px;
+}
+
+.partners-list li:nth-child(3) {
+  padding: 64px 36px;
+}
+
+.partners-list li:nth-child(4) {
+  padding: 52px 44px 44px 43px;
+}
 
 /* Футер*/
 
-.footer {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
-
 /*Футер Как нас найти*/
-.footer-contacts {
-  outline: 5px solid rgba(0,0,255,0.5);
-  outline-offset: -5px;
+
+.contacts-adress {
+  width: 319px;
+  height: 308px;
+  box-sizing: border-box;
+  padding: 48px 50px;
 }
 
 .adress-title {
@@ -426,6 +533,8 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .adress-text {
@@ -433,6 +542,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .footer-phone {
@@ -441,32 +552,55 @@ img {
 
 .btn-footer {
   background-color: var(--basic-red);
+  display: block;
+  width: 219px;
+  height: 50px;
+  padding: 15px 44px;
+  box-sizing: border-box;
 }
 
 /* Футер Давайте дружить*/
+
 .footer-social {
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
   padding-top: 75px;
   padding-bottom: 75px;
 }
 
 .wrap-social {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 260px 1fr;
   column-gap: 40px;
 }
 
-.social-list,
-.social-inner {
-  outline: 5px solid rgba(0,100,0,0.5);
-  outline-offset: -5px;
-  margin: 0;
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list li {
+  width: 81px;
+  height: 81px;
 }
 
 .btn-social {
   background-color: var( --basic-grey-light);
+  display: block;
+  width: 81px;
+  height: 81px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
 
+.btn-vk {
+  padding: 33px 28px;
+}
+
+.btn-fb {
+  padding: 31px 34px 28px 35px;
+}
+
+.btn-insta {
+  padding: 30px;
 }
 
 .btn-social:hover {
@@ -481,15 +615,22 @@ img {
   opacity: 0.3;
 }
 
+.social-inner {
+  padding-left: 100px;
+}
+
 .social-slogan {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .social-text {
   line-height: 22px;
   color: var( --basic-grey-dark);
+  margin: 0;
 }
 
 /*КАТАЛОГ*/
@@ -505,6 +646,8 @@ img {
   outline: 5px solid rgba(0,100,0,0.5);
   outline-offset: -5px;
   margin-bottom: 55px;
+  padding-top: 78px;
+  padding-bottom: 108px;
   display: grid;
 }
 
