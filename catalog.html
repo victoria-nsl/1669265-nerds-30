@@ -55,16 +55,18 @@
                 <input type="range" min="0" max="15000" step="500" value="10000" />
               </div>
               <div class="filter-cost-range">
-                <label> от
+                <label>
+                  <span>от</span>
                   <input type="text" name="min-price" value="0" />
                 </label>
-                <label> до
+                <label>
+                  <span>до</span>
                   <input type="text" name="max-price" value="15000" />
                 </label>
               </div>
             </div>
             <form class="filter-grids-features" method="post" action="https://echo.htmlacademy.ru">
-              <fieldset class="filter-grids" >
+              <fieldset class="filter-grids">
                 <legend>Сетка:</legend>
                 <ul class="filter-grids-list">
                   <li class="filter-option filter-radio" >
@@ -131,26 +133,28 @@
           <div class="wrap-catalog">
             <div class="catalog-sort">
               <h3>Сортировать:</h3>
-              <ul class="sort-type-list">
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По названию</li>
-              </ul>
-              <div class="sort-badge sort-descending">
-                <img
-                  src= "img/icon-down-dir.svg"
-                  width="11"
-                  height="10"
-                  alt="Знак треугольника, сортировка по убыванию"
-                />
-              </div>
-              <div class="sort-badge sort-ascending">
-                <img
-                  src= "img/icon-up-dir.svg"
-                  width="11"
-                  height="10"
-                  alt="Знак треугольника, сортировка по возрастанию"
-                />
+              <div class="sort-inner">
+                <ul class="sort-type-list">
+                  <li>По цене</li>
+                  <li>По типу</li>
+                  <li>По названию</li>
+                </ul>
+                <div class="sort-badge sort-descending">
+                  <img
+                    src= "img/icon-down-dir.svg"
+                    width="11"
+                    height="10"
+                    alt="Знак треугольника, сортировка по убыванию"
+                  />
+                </div>
+                <div class="sort-badge sort-ascending">
+                  <img
+                    src= "img/icon-up-dir.svg"
+                    width="11"
+                    height="10"
+                    alt="Знак треугольника, сортировка по возрастанию"
+                  />
+                </div>
               </div>
             </div>
             <ul class="catalog-list">
@@ -158,112 +162,100 @@
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт Седона</h3>
-                  <p>
-                    <img
-                      src= "img/img-sedona-1.jpg"
-                      width="358"
-                      height="578"
-                      alt="Cайт Седона"
-                    />
-                  </p>
+                  <img
+                    src= "img/img-sedona-1.jpg"
+                    width="358"
+                    height="578"
+                    alt="Cайт Седона"
+                  />
                 </a>
-                <div class="catalog-item-description visually-hidden">
-                    <h3>SEDONA</h3>
-                    <p>Информационный сайт для туристов</p>
-                    <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
+                <div class="catalog-item-description">
+                  <h3>SEDONA</h3>
+                  <p>Информационный сайт для туристов</p>
+                  <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт PINK APP</h3>
-                  <p>
-                    <img
+                  <img
                     src= "img/img-pink-1.jpg"
                     width="358"
                     height="578"
                     alt="Cайт PINK"
-                    />
-                  </p>
+                  />
                 </a>
-                <div class="catalog-item-description visually-hidden">
-                    <h3>PINK APP</h3>
-                    <p>Продуктовый лендинг приложения для iOS и Android</p>
-                    <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
+                <div class="catalog-item-description">
+                  <h3>PINK APP</h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт Барбершоп «Бородинский»</h3>
-                  <p>
-                    <img
-                      src= "img/img-barbershop-1.jpg"
-                      width="358"
-                      height="578"
-                      alt="Cайт Барбершоп «Бородинский»"
-                    />
-                  </p>
+                  <img
+                    src= "img/img-barbershop-1.jpg"
+                    width="358"
+                    height="578"
+                    alt="Cайт Барбершоп «Бородинский»"
+                  />
                 </a>
                   <h3 class="visually-hidden">Cайт MISHKA</h3>
-                <div class="catalog-item-description visually-hidden">
-                    <h3>Барбершоп «Бородинский»</h3>
-                    <p>Сайт мужской парикмахерской</p>
-                    <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
+                <div class="catalog-item-description">
+                  <h3>Барбершоп «Бородинский»</h3>
+                  <p>Сайт мужской парикмахерской</p>
+                  <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт MISHKA</h3>
-                  <p>
-                    <img
-                      src= "img/img-mishka-1.jpg"
-                      width="358"
-                      height="578"
-                      alt="Cайт MISHKA"
-                    />
-                  </p>
+                  <img
+                    src= "img/img-mishka-1.jpg"
+                    width="358"
+                    height="578"
+                    alt="Cайт MISHKA"
+                  />
                 </a>
-                <div class="catalog-item-description visually-hidden">
-                    <h3>MISHKA</h3>
-                    <p>Сайт о товарах ручной работы</p>
-                    <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
+                <div class="catalog-item-description">
+                  <h3>MISHKA</h3>
+                  <p>Сайт о товарах ручной работы</p>
+                  <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт A+</h3>
-                  <p>
-                    <img
-                      src= "img/img-aplus-1.jpg"
-                      width="358"
-                      height="578"
-                      alt="Cайт A+"
-                    />
-                  </p>
+                  <img
+                    src= "img/img-aplus-1.jpg"
+                    width="358"
+                    height="578"
+                    alt="Cайт A+"
+                  />
                 </a>
-                <div class="catalog-item-description visually-hidden">
-                    <h3>A+</h3>
-                    <p>Сайт учебного заведения</p>
-                    <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
+                <div class="catalog-item-description">
+                  <h3>A+</h3>
+                  <p>Сайт учебного заведения</p>
+                  <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-slider"></div>
                 <a href="#">
                   <h3 class="visually-hidden">Cайт КВАСТ</h3>
-                  <p>
                     <img
                       src= "img/img-kvast-1.jpg"
                       width="358"
                       height="578"
                       alt="Cайт КВАСТ"
                     />
-                  </p>
                 </a>
-                <div class="catalog-item-description visually-hidden">
+                <div class="catalog-item-description">
                     <h3>КВАСТ</h3>
                     <p>Сайт производителя крафтового кваса</p>
                     <button class="btn btn-catalog-item" type="button">9 900 ₽</button>
@@ -306,7 +298,7 @@
             191186, Санкт-Петербург,<br />
             ул. Б. Конюшенная, д. 19/8<br />
             <br />
-            Телефон: <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+            тел.: <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <button class="btn btn-footer"  type="button">Напишите нам</button>
         </div>
@@ -316,7 +308,7 @@
         <div class="wrap-social">
           <ul class="social-list">
             <li>
-              <a class="btn-social" href="#">
+              <a class="btn-social btn-vk" href="#">
                 <img
                   src="img/vk-icon.svg"
                   width="27"
@@ -326,7 +318,7 @@
               </a>
             </li>
             <li>
-              <a class="btn-social" href="#">
+              <a class="btn-social btn-fb" href="#">
                 <img
                   src="img/fb-icon.svg"
                   width="12"
@@ -336,7 +328,7 @@
               </a>
             </li>
             <li>
-              <a class="btn-social" href="#">
+              <a class="btn-social btn-insta" href="#">
                 <img
                   src="img/insta-icon.svg"
                   width="21"

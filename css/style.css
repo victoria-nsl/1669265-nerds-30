@@ -33,6 +33,7 @@
   --basic-grey-dark: #444444;
   --basic-grey--dark-l: #4D4D4D;
   --basic-grey: #666666;
+  --basic-grey-light-l: #DBDBDB;
   --basic-grey-light: #E1E1E1;
   --basic-grey-extra-light: #EEEEEE;
   --basic-white: #ffffff;
@@ -114,7 +115,13 @@ img {
 .about-studio h2,
 .partners-studio h2,
 .footer-contacts h2,
-.footer-social h2 {
+.footer-social h2,
+.catalog-item h3,
+.catalog-item-description h3,
+.catalog-sort h3,
+.filter-cost h3,
+.filters h2,
+.catalog h2 {
   margin: 0;
   font-size: 0;
 }
@@ -155,14 +162,23 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
+  margin-top: 46px;
 }
 
-.site-nav{
-  justify-self: center;
+.site-nav {
+  display: flex;
+  width: 437px;
+  margin-left: 162px;
+  margin-top: 26px;
+}
+
+.site-nav li:not(:last-child) {
+  margin-right: 45px;
 }
 
 .cart {
   justify-self: end;
+  margin-top: 26px;
 }
 
 .cart span {
@@ -211,7 +227,6 @@ img {
 
 .slide-inner-story {
   width: 397px;
-  height: 431px;
 }
 
 .slide-slogan {
@@ -220,7 +235,7 @@ img {
   line-height: 55px;
   margin: 0;
   margin-bottom: 25px;
-  margin-top: 79px;
+  margin-top: 78px;
 }
 
 .slide-text {
@@ -635,18 +650,11 @@ img {
 
 /*КАТАЛОГ*/
 
-.page-catalog {
-  outline: 5px solid rgba(200,20,100,0.5);
-  outline-offset: -5px;
-}
-
 .wrap-catalor-title {
   background-color: var(--basic-grey-extra-light);
   text-align: center;
-  outline: 5px solid rgba(0,100,0,0.5);
-  outline-offset: -5px;
   margin-bottom: 55px;
-  padding-top: 78px;
+  padding-top: 70px;
   padding-bottom: 108px;
   display: grid;
 }
@@ -655,25 +663,23 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
   grid-column: 1/-1;
 }
 
 .wrap-filters-catalog {
-  outline: 5px solid rgba(255,100,0,0.5);
-  outline-offset: -5px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 40px;
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
+  margin-bottom: 60px;
+}
+
+/*Фильтры*/
+
+.filters {
+  width: 260px;
 }
 
 /*Фильтр шаблонов Стоимость*/
-
-.wrap-filters {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-}
 
 .filter-cost {
   text-transform: uppercase;
@@ -683,21 +689,53 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 48px;
 }
 
 .filter-cost-picture, .filter-cost-range input {
   background-color: var(--basic-grey-extra-light);
 }
 
+.filter-cost-picture {
+  width: 260px;
+  height: 80px;
+  margin-bottom: 14px;
+}
+
 .filter-cost-range  {
   line-height: 22px;
   color: var(--basic-black-light);
+  width: 260px;
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/*Фильтр шаблонов Сетка Особенности*/
+.filter-cost-range label {
+  width: 115px;
+  display: flex;
+  align-items: center;
+}
 
-.filter-grids, .filter-features {
-  border: 0 none;
+.filter-cost-range input  {
+  width: 80px;
+  height: 38px;
+  text-align: center;
+  margin-left: 11px;
+  box-sizing: border-box;
+}
+
+/*Фильтр шаблонов Сетка-Особенности*/
+
+.filter-grids-features fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 48px;
+}
+
+filter-grids-features .filter-features {
+  margin-bottom: 50px;
 }
 
 .filter-grids-features legend {
@@ -705,6 +743,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .filter-option {
@@ -712,10 +751,23 @@ img {
   color: var(--basic-black-light);
 }
 
+.filter-radio:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.filter-checkbox:not(:last-child) {
+  margin-bottom: 21px;
+}
+
 .btn-filter {
   background-color: var(--basic-grey-extra-light);
   color: var(--basic-black);
   line-height: 18px;
+  display: block;
+  width: 260px;
+  height: 50px;
+  padding: 15px 88px;
+  box-sizing: border-box;
 }
 
 .btn-filter:hover  {
@@ -729,27 +781,43 @@ img {
 
 /*Каталог шаблонов Сортировать*/
 
-.wrap-catalog {
-  outline: 5px solid rgba(250,200,0,0.5);
-  outline-offset: -5px;
-}
-
 .catalog-sort {
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .catalog-sort h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  width: 360px;
+}
+
+.sort-inner {
+  width: 360px;
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.sort-type-list {
+  width: 273px;
+  margin-right: 47px;
 }
 
 .sort-type-list li {
   opacity: 0.3;
   font-size: 14px;
   line-height: 18px;
+  display:inline-block;
+  margin-right: 22px;
 }
 
+.sort-type-list li:last-child {
+  margin-right: 0;
+}
 .sort-type-list li:hover {
   opacity: 0.6;
 }
@@ -758,7 +826,32 @@ img {
   opacity: 1;
 }
 
+.sort-badge {
+  margin-right: 18px;
+}
+
+.sort-ascending {
+  margin-right: 0;
+}
+
 /*Каталог шаблонов Каталог*/
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.catalog-item {
+  width: 360px;
+ /* height: 618px; добавить после позиционирования*/
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
 
 .catalog-slider {
   width: 360px;
@@ -771,10 +864,17 @@ img {
   opacity: 1;
 }
 
+.catalog-item img {
+  width: 358px;
+  height: 578px;
+}
+
 .catalog-item-description {
   width: 360px;
   height: 231px;
   background-color: var(--basic-grey-extra-light);
+  padding: 26px 52px 44px 52px;
+  box-sizing: border-box;
 }
 
 .catalog-item:hover .catalog-item-description {
@@ -787,6 +887,7 @@ img {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .catalog-item-description h3:hover {
@@ -802,11 +903,18 @@ img {
   line-height: 18px;
   text-align: center;
   color: var(--basic-grey);
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .btn-catalog-item {
+  display: block;
   width: 200px;
+  height: 50px;
+  padding: 15px 72px;
+  box-sizing: border-box;
   background-color: var(--basic-red);
+  margin: 0 auto;
 }
 
 .btn-catalog-item:hover  {
@@ -819,9 +927,31 @@ img {
 
 /*Список страниц*/
 
+.page-list {
+  display: flex;
+  width: 443px;
+}
+
 .page-item {
   font-weight: 500;
   line-height: 18px;
+  margin-right: 11px;
+}
+.page-item:last-child {
+  margin-right: 0;
+}
+
+.page-item a {
+  display: block;
+  padding: 15px 20px;
+}
+
+.page-item:first-child  a{
+  border: 3px solid var(--basic-grey-light-l);
+}
+
+.page-item:last-child  a{
+  padding: 15px 77px;
 }
 
 .page-item a[href] {
