@@ -439,7 +439,7 @@
                 >+7 (812) 275-75-75</a
               >
             </p>
-            <button class="btn btn-footer" type="button">Напишите нам</button>
+            <a class="btn btn-footer" href="writeus.html">Напишите нам</a>
           </div>
         </div>
       </section>
@@ -487,5 +487,52 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form
+        class="write-form"
+        action="https://echo.htmlacademy.ru/"
+        method="post"
+      >
+        <div class="wrap-user">
+          <p class="user-item">
+            <label for="user-name">Ваше имя:</label>
+            <input
+              id="user-name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p class="user-item">
+            <label for="user-email">Ваш email:</label>
+            <input
+              id="user-email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </p>
+          <p class="user-item item-letter">
+            <label for="letter-text">Текст письма:</label>
+            <textarea
+              id="letter-text"
+              name="letter"
+              placeholder="В свободной форме"
+            ></textarea>
+          </p>
+        </div>
+        <button
+          class="btn btn-write"
+          type="submit"
+          aria-label="Отправить письмо дизайн-студии"
+        >
+          Отправить
+        </button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
