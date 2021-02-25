@@ -250,16 +250,14 @@ img {
 }
 
 .slider {
+  min-height: 411px;
   position: relative;
-  height: 411px;
 }
 
 .slide-item {
   width: 1160px;
-  padding-top: 59px;
   padding-bottom: 80px;
   display: none;
-  position: absolute;
 }
 
 .current-slide {
@@ -288,7 +286,9 @@ img {
   font-size: 55px;
   line-height: 55px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  width: 538px;
+  padding-top: 58px;
 }
 
 .slide-text {
@@ -296,18 +296,16 @@ img {
   color: var(--basic-black-ligh);
   margin: 0;
   margin-bottom: 38px;
+  width: 416px;
 }
 
 .btn-slide {
   background-color: var(--basic-red);
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 240px;
-  height: 50px;
   padding: 17px 54px 15px 54px;
   box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-slide:hover {
@@ -402,16 +400,13 @@ img {
 /*Кнопки ЗАКАЗАТЬ*/
 
 .btn-service {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 160px;
-  height: 50px;
   padding: 17px 40px 15px 39px;
   box-sizing: border-box;
   order: 4;
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-service:active {
@@ -726,7 +721,7 @@ img {
 }
 
 .contacts-inner {
-  height: 416px;
+  min-height: 416px;
   position: absolute;
   left: 0;
   right: 0;
@@ -734,13 +729,13 @@ img {
 
 .contacts-adress {
   width: 319px;
-  height: 308px;
   box-sizing: border-box;
   padding: 48px 50px;
   background-color: var(--basic-white);
   position: absolute;
   top: 54px;
   left: 20px;
+  box-shadow:  0 1px 1px rgba(var(--basic-black-rgb), 0.1);
 }
 
 .adress-title {
@@ -772,15 +767,12 @@ img {
 
 .btn-footer {
   background-color: var(--basic-red);
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 219px;
-  height: 50px;
   padding: 17px 44px 15px 44px;
   box-sizing: border-box;
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-footer:hover {
@@ -1120,15 +1112,12 @@ img {
   background-color: var(--basic-grey-extra-light);
   color: var(--basic-black);
   line-height: 18px;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 260px;
-  height: 50px;
   padding: 17px 89px 15px 88px;
   box-sizing: border-box;
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-filter:hover {
@@ -1383,7 +1372,7 @@ img {
   margin: 0;
   margin-bottom: 32px;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1597,15 +1586,12 @@ img {
 
 .btn-write {
   background-color: var(--basic-red);
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   width: 259px;
-  height: 50px;
-  padding: 15px 83px;
+  padding: 16px 83px;
   box-sizing: border-box;
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .btn-write:hover {
