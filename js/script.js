@@ -66,7 +66,7 @@ window.addEventListener("keydown", function (evt) {
 const imageSlide = document.querySelectorAll(".slide-item");
 const btnSlide = document.querySelectorAll(".btn-slider");
 
-let changeSlide = function (imageSlide, btnSlide, index) {
+const changeSlide = function (imageSlide, btnSlide, index) {
   for (let i = 0; i < imageSlide.length; i++) {
     if (imageSlide[i].classList.contains("current-slide")) {
       imageSlide[i].classList.remove("current-slide");
