@@ -1543,6 +1543,7 @@ img {
   font: inherit;
   line-height: 18px;
   border: 2px solid var(--basic-grey-modal);
+  border-radius: 3px;
   box-sizing: border-box;
   width: 360px;
   height: 50px;
@@ -1578,9 +1579,6 @@ img {
 
 .user-item input:invalid {
   border-color: var(--special-red-hover);
-}
-
-.user-item input:invalid::placeholder {
   color: var(--special-red-hover);
 }
 
