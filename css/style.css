@@ -1380,7 +1380,6 @@ img {
 .btn-catalog-item {
   display: block;
   width: 200px;
-  height: 50px;
   padding: 17px 72px 15px 72px;
   box-sizing: border-box;
   background-color: var(--basic-red);
