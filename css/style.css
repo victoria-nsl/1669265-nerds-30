@@ -293,7 +293,7 @@ img {
 
 .slide-text {
   line-height: 24px;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
   margin: 0;
   margin-bottom: 38px;
   width: 416px;
@@ -391,7 +391,7 @@ img {
 
 .service-item p {
   line-height: 24px;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
   margin: 0;
   margin-bottom: 32px;
   order: 3;
@@ -498,7 +498,7 @@ img {
   margin: 0;
   margin-bottom: 41px;
   line-height: 24px;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
 }
 
 .description-orders h3 {
@@ -507,13 +507,13 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
   margin-bottom: 23px;
 }
 
 .orders-list {
   line-height: 24px;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
 }
 
 .orders-list li {
@@ -550,7 +550,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--basic-black-ligh);
   margin: 0;
   margin-bottom: 31px;
 }
@@ -603,7 +602,7 @@ img {
 .benefit-text {
   margin: 0;
   line-height: 18px;
-  color: var(--basic-black-ligh);
+  color: var(--basic-black-light);
 }
 
 /*Партнеры*/
@@ -735,7 +734,7 @@ img {
   position: absolute;
   top: 54px;
   left: 20px;
-  box-shadow:  0 1px 1px rgba(var(--basic-black-rgb), 0.1);
+  box-shadow: 0 1px 1px rgba(var(--basic-black-rgb), 0.1);
 }
 
 .adress-title {
@@ -942,13 +941,13 @@ img {
 
 .range-controls:nth-child(1) .scale {
   height: 2px;
-  background: var(--basic-grey-modal);
+  background-color: var(--basic-grey-modal);
 }
 
 .range-controls:nth-child(1) .bar {
   width: 70%;
   height: 2px;
-  background: var(--basic-green);
+  background-color: var(--basic-green);
 }
 
 .range-controls:nth-child(1) .toggle {
@@ -965,8 +964,12 @@ img {
   cursor: pointer;
 }
 
+.range-controls:nth-child(1) .toggle-min {
+  left: 7%;
+}
+
 .range-controls:nth-child(1) .toggle-max {
-  left: 160px;
+  left: 62%;
 }
 
 .range-controls:nth-child(2) {
@@ -1443,10 +1446,6 @@ img {
   background-color: var(--special-grey-active-catalog);
   color: rgba(var(--basic-black-rgb), 0.3);
   box-shadow: inset 0px 3px 0px rgba(var(--basic-black-rgb), 0.1);
-}
-
-.current-page-item a:active {
-  border: none;
 }
 
 /*Модальное окно*/
