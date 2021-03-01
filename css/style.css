@@ -945,9 +945,10 @@ img {
 }
 
 .range-controls:nth-child(1) .bar {
-  width: 70%;
+  width: 69%;
   height: 2px;
   background-color: var(--basic-green);
+  margin-left: 0;
 }
 
 .range-controls:nth-child(1) .toggle {
